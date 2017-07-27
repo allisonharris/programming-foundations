@@ -1,5 +1,10 @@
 import turtle
 
+def draw_square(some_turtle):
+    for i in range (1,5):
+        some_turtle.forward(100)
+        some_turtle.right(90)
+
 def draw_shapes():
     window = turtle.Screen()
     window.bgcolor("red")
@@ -15,19 +20,23 @@ def draw_shapes():
         brad.right(90)
         i = i + 1
 
-    angie = turtle.Turtle()
-    angie.shape("arrow")
-    angie.color("black")
-    angie.circle(100)
+    for i in range (1,37):
+        draw_square(brad)
+        brad.right(10)
 
-    pam = turtle.Turtle()
-    pam.color("white")
-    i = 0
+#    angie = turtle.Turtle()
+#    angie.shape("arrow")
+#    angie.color("black")
+#    angie.circle(100)
 
-    while (i < 3):
-        pam.forward(300)
-        pam.left(120)
-        i = i + 1
+#    pam = turtle.Turtle()
+#    pam.color("white")
+#    i = 0
+
+#    while (i < 3):
+#        pam.forward(300)
+#        pam.left(120)
+#        i = i + 1
 
 
     window.exitonclick()
