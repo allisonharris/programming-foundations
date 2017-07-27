@@ -1,6 +1,6 @@
 import turtle
 
-def draw_square():
+def draw_shapes():
     window = turtle.Screen()
     window.bgcolor("red")
 
@@ -15,7 +15,12 @@ def draw_square():
         brad.right(90)
         i = i + 1
 
+    angie = turtle.Turtle()
+    turtle.shape("arrow")
+    turtle.color("black")
+    angie.circle(100)
+
 
     window.exitonclick()
 
-draw_square()
+draw_shapes()
