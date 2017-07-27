@@ -5,9 +5,9 @@ def draw_shapes():
     window.bgcolor("red")
 
     brad = turtle.Turtle()
-    turtle.shape("turtle")
-    turtle.color("green")
-    turtle.speed(3)
+    brad.shape("turtle")
+    brad.color("green")
+    brad.speed(3)
     i = 0
 
     while(i<4):
@@ -16,9 +16,18 @@ def draw_shapes():
         i = i + 1
 
     angie = turtle.Turtle()
-    turtle.shape("arrow")
-    turtle.color("black")
+    angie.shape("arrow")
+    angie.color("black")
     angie.circle(100)
+
+    pam = turtle.Turtle()
+    pam.color("white")
+    i = 0
+
+    while (i < 3):
+        pam.forward(300)
+        pam.left(120)
+        i = i + 1
 
 
     window.exitonclick()
