@@ -8,15 +8,12 @@ def draw_square():
     turtle.shape("turtle")
     turtle.color("green")
     turtle.speed(3)
-    
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
-    brad.forward(100)
-    brad.right(90)
+    i = 0
+
+    while(i<4):
+        brad.forward(100)
+        brad.right(90)
+        i = i + 1
 
 
     window.exitonclick()
